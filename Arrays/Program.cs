@@ -17,3 +17,12 @@ foreach (var kvp in freq)
 {
     Console.WriteLine($"{kvp.Key} -> {kvp.Value}");
 }
+
+int[] duplicateArr = [1, 2, 2, 3, 1, 4, 2, 3, 4, 7,9,7, 9, 1];
+
+Console.WriteLine("-------- Finding duplicates in the array ----------");
+
+var duplicates = DuplicateElements.GetDuplicateElements(duplicateArr);
+
+foreach(var i in duplicates)
+    Console.WriteLine(i);
